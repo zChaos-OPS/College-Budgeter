@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:id="@+id/SC1"
+    android:background="#ff05c9fb">
+
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewSC1" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+
+            <TextView
+                android:text="Welcome!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WelcomeSC1"
+                android:layout_marginVertical="150dp"
+                android:layout_marginLeft="115dp"
+                android:textSize="40dp"
+                android:textColor="#ffeeff00"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Click on 'Proceed' to learn about this app."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/IntroSC1"
+                android:layout_marginTop="-100dp"
+                android:layout_marginLeft="50dp"
+                android:maxLines="5"
+                android:textColor="#ffffff00"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:layout_marginRight="50dp"
+                android:contextClickable="false"
+                android:textAlignment="center" />
+            <Button
+                android:text="Proceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProceedSC1"
+                android:textStyle="bold"
+                android:layout_marginRight="100dp"
+                android:background="#ff00e5ff"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="60dp" />
+
+        </TableLayout> 
+
+    </ScrollView>
+    
+</LinearLayout>
