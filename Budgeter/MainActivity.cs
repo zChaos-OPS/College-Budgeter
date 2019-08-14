@@ -20,8 +20,8 @@ namespace Budgeter
             Button btnScreen2 = FindViewById<Button>(Resource.Id.btnProceedSC1);
 
             btnScreen2.Click += (sender, e) => {
-                Intent screen2 = new Intent(this, typeof(SC2));
-                StartActivity(screen2);
+                Intent Screen2 = new Intent(this, typeof(SC2));
+                StartActivity(Screen2);
             };
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

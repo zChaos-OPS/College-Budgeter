@@ -56,7 +56,7 @@
                 android:layout_marginRight="100dp"
                 android:background="#ff00e5ff"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="60dp" />
+                android:layout_marginTop="30dp" />
 
         </TableLayout> 
 
