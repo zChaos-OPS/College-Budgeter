@@ -12,6 +12,18 @@
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     android:background="#ff05c9fb">
+    <TextView
+        android:text="The following are the categories and maybe some additional ones that this app will ask you questions on:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCategoryInfoSC3"
+        android:textColor="#ff0002e0"
+        android:textStyle="bold|italic"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        android:typeface="serif"
+        android:paddingBottom="18dp" />
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -23,18 +35,6 @@
             android:layout_height="fill_parent"
             android:stretchColumns="1"
             android:id="@+id/TableLaySC3">
-            <TextView
-                android:text="The following are the categories and maybe some additional ones that this app will ask you questions on:"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCategoryInfoSC3"
-                android:textColor="#ff0002e0"
-                android:textStyle="bold|italic"
-                android:textSize="23dp"
-                android:textAlignment="center"
-                android:typeface="serif"
-                android:paddingBottom="18dp" />
             <TextView
                 android:text="1. Shopping (Dresses)"
                 android:layout_width="wrap_content"
@@ -116,6 +116,15 @@
                 android:textStyle="normal"
                 android:paddingBottom="20dp"
                 android:textSize="21dp" />
+            <TextView
+                android:text="Click on the 'Proceed' button below to start:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConclusiveInfoSC3"
+                android:textColor="#ff1a237e"
+                android:textStyle="bold|italic"
+                android:textSize="19dp"
+                android:textAlignment="center" />
             <Button
                 android:text="Proceed"
                 android:layout_width="match_parent"
@@ -123,12 +132,13 @@
                 android:id="@+id/btnProceedSC3"
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="100dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:background="#ff00e5ff"
                 android:textStyle="bold" />
         </TableLayout>
 
     </ScrollView>
+
 
 
 </LinearLayout>

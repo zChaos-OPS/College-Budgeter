@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ff05c9fb"
+    android:id="@+id/SC5">
+
+    <TextView
+        android:text="Section 2: Transportation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec2TopSC5"
+        android:textColor="#ff0002e0"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:paddingBottom="18dp" />
+
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollBarSC5" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/TableLaySC5">
+
+        </TableLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec2Note"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        android:textColor="#ff1a237e"
+        android:text="Note: Choose the answer the applies yo you the most." />
+    <TextView
+        android:text="1. Do you/Will you go by walk to college?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec2Qs1"
+        android:textColor="#ffffff00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdgrpSec2Qs1Ans">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/rdbtnSec2Qs1Opt1"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"
+            android:textSize="18dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/rdbtnSec2Qs1Opt2"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"
+            android:textSize="18dp" />
+    </RadioGroup>
+
+</LinearLayout>
