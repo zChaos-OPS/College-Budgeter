@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -29,56 +30,228 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ScrollBarSC5" >
+        android:id="@+id/ScrollBarSC5">
 
         <TableLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:stretchColumns="1"
             android:id="@+id/TableLaySC5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Note"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff1a237e"
+                android:text="Note: Choose the answer the applies to you the most." />
+            <TextView
+                android:text="1. Do you/Will you go by walk to college?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs1"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec2Qs1Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec2Qs1Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec2Qs1Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+            </RadioGroup>
+            <TextView
+                android:text="2. Do you/Will you use a bicycle to go to college?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs2"
+                android:textColor="#ffffff00"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec2Qs2Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec2Qs2Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec2Qs2Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+            </RadioGroup>
+            <TextView
+                android:text="3. Do you own a personal car/motorbike?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs3"
+                android:textColor="#ffffff00"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec2Qs3Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec2Qs3Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec2Qs3Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+            </RadioGroup>
+            <TextView
+                android:text="4. Are you using it/planning to use it to go to college?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs4"
+                android:textColor="#ffffff00"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec2Qs4Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec2Qs4Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec2Qs4Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+            </RadioGroup>
+            <TextView
+                android:text="If yes, then please fill out the following table completely. If one or more of the options doesn't apply to you, do NOT leave the text field blank. Put a zero (0) in the text field."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs4TabInfo"
+                android:textColor="#fff50057"
+                android:textStyle="bold"
+                android:textSize="19dp" />
+            <TableRow
+                android:id="@+id/TabRowSec2Qs4"
+                android:orientation="vertical"
+                android:background="#ff5c6bc0">
+                <TextView
+                    android:gravity="left"
+                    android:text="Description"
+                    android:id="@+id/txtvSec2Qs4TabDesc"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_gravity="left" />
+                <TextView
+                    android:text="Amount (in $)"
+                    android:gravity="right"
+                    android:id="@+id/txtvSec2Qs4TabAmount"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/RelLaySec2"
+                android:background="#ffffffff">
+                <TextView
+                    android:text="Car Expenses (if paid in installments or filling up loans)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2CarExp"
+                    android:gravity="left"
+                    android:maxLines="3"
+                    android:layout_marginRight="200dp"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000" />
+                <EditText
+                    android:inputType="number|numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2CarExpAmnt"
+                    android:text="$"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:text="Petroleum/Gas Expenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2Pet-Gas"
+                    android:textStyle="italic"
+                    android:layout_gravity="left"
+                    android:layout_below="@+id/txtvSec2CarExp"
+                    android:layout_marginRight="200dp"
+                    android:textColor="#ff000000"
+                    android:textSize="18dp"
+                    android:maxLines="2" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2Pet-GasAmnt"
+                    android:layout_below="@+id/txtSec2CarExpAmnt"
+                    android:layout_marginLeft="200dp"
+                    android:text="$" />
+                <TextView
+                    android:text="Car Insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2CarIns" />
+            </RelativeLayout>
 
         </TableLayout>
 
     </ScrollView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtvSec2Note"
-        android:textSize="22dp"
-        android:textStyle="bold|italic"
-        android:textColor="#ff1a237e"
-        android:text="Note: Choose the answer the applies yo you the most." />
-    <TextView
-        android:text="1. Do you/Will you go by walk to college?"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtvSec2Qs1"
-        android:textColor="#ffffff00"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:typeface="sans" />
-    <RadioGroup
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rdgrpSec2Qs1Ans">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yes"
-            android:id="@+id/rdbtnSec2Qs1Opt1"
-            android:buttonTint="#ffd50000"
-            android:textColor="#ffd50000"
-            android:textSize="18dp" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:id="@+id/rdbtnSec2Qs1Opt2"
-            android:buttonTint="#ffd50000"
-            android:textColor="#ffd50000"
-            android:textSize="18dp" />
-    </RadioGroup>
 
 </LinearLayout>
