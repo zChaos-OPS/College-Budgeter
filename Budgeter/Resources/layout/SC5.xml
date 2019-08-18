@@ -24,7 +24,6 @@
         android:typeface="serif"
         android:textAlignment="center"
         android:paddingBottom="18dp" />
-
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -44,7 +43,9 @@
                 android:textSize="22dp"
                 android:textStyle="bold|italic"
                 android:textColor="#ff1a237e"
-                android:text="Note: Choose the answer the applies to you the most." />
+                android:text="Note: Choose the answer the applies to you the most."
+                android:paddingBottom="10dp"
+                android:maxLines="5" />
             <TextView
                 android:text="1. Do you/Will you go by walk to college?"
                 android:layout_width="match_parent"
@@ -53,13 +54,16 @@
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:typeface="sans" />
+                android:typeface="sans"
+                android:paddingBottom="5dp"
+                android:maxLines="4" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec2Qs1Ans">
+                android:id="@+id/rdgrpSec2Qs1Ans"
+                android:paddingBottom="10dp">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -67,7 +71,7 @@
                     android:id="@+id/rdbtnSec2Qs1Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,13 +88,16 @@
                 android:id="@+id/txtvSec2Qs2"
                 android:textColor="#ffffff00"
                 android:textStyle="bold"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:paddingBottom="5dp"
+                android:maxLines="6" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec2Qs2Ans">
+                android:id="@+id/rdgrpSec2Qs2Ans"
+                android:paddingBottom="10dp">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -115,13 +122,16 @@
                 android:id="@+id/txtvSec2Qs3"
                 android:textColor="#ffffff00"
                 android:textStyle="bold"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:paddingBottom="5dp"
+                android:maxLines="5" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec2Qs3Ans">
+                android:id="@+id/rdgrpSec2Qs3Ans"
+                android:paddingBottom="10dp">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,13 +156,16 @@
                 android:id="@+id/txtvSec2Qs4"
                 android:textColor="#ffffff00"
                 android:textStyle="bold"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:paddingBottom="5dp"
+                android:maxLines="6" />
             <RadioGroup
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec2Qs4Ans">
+                android:id="@+id/rdgrpSec2Qs4Ans"
+                android:paddingBottom="10dp">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -177,26 +190,30 @@
                 android:id="@+id/txtvSec2Qs4TabInfo"
                 android:textColor="#fff50057"
                 android:textStyle="bold"
-                android:textSize="19dp" />
+                android:textSize="19dp"
+                android:paddingBottom="15dp"
+                android:maxLines="15" />
             <TableRow
                 android:id="@+id/TabRowSec2Qs4"
                 android:orientation="vertical"
-                android:background="#ff5c6bc0">
+                android:background="#ff5c6bc0"
+                android:paddingBottom="20dp">
                 <TextView
                     android:gravity="left"
                     android:text="Description"
                     android:id="@+id/txtvSec2Qs4TabDesc"
                     android:textColor="#ff000000"
                     android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_gravity="left" />
+                    android:textSize="25dp"
+                    android:layout_gravity="left"
+                    android:maxLines="2" />
                 <TextView
                     android:text="Amount (in $)"
                     android:gravity="right"
                     android:id="@+id/txtvSec2Qs4TabAmount"
                     android:textColor="#ff000000"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="25dp"
                     android:maxLines="2"
                     android:layout_gravity="right"/>
             </TableRow>
@@ -211,18 +228,23 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/txtvSec2CarExp"
                     android:gravity="left"
-                    android:maxLines="3"
+                    android:maxLines="6"
                     android:layout_marginRight="200dp"
                     android:textStyle="italic"
                     android:textSize="18dp"
-                    android:textColor="#ff000000" />
+                    android:textColor="#ff000000"
+                    android:paddingBottom="8dp"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp" />
                 <EditText
                     android:inputType="number|numberDecimal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtSec2CarExpAmnt"
                     android:text="$"
-                    android:layout_marginLeft="200dp"/>
+                    android:layout_marginLeft="200dp"
+                    android:paddingBottom="60dp"
+                    android:maxLines="1" />
                 <TextView
                     android:text="Petroleum/Gas Expenses"
                     android:layout_width="match_parent"
@@ -234,7 +256,10 @@
                     android:layout_marginRight="200dp"
                     android:textColor="#ff000000"
                     android:textSize="18dp"
-                    android:maxLines="2" />
+                    android:maxLines="5"
+                    android:paddingBottom="20dp"
+                    android:textAlignment="center"
+                    android:paddingTop="25dp" />
                 <EditText
                     android:inputType="numberDecimal|number"
                     android:layout_width="match_parent"
@@ -242,13 +267,286 @@
                     android:id="@+id/txtSec2Pet-GasAmnt"
                     android:layout_below="@+id/txtSec2CarExpAmnt"
                     android:layout_marginLeft="200dp"
-                    android:text="$" />
+                    android:text="$"
+                    android:paddingBottom="60dp"
+                    android:maxLines="1" />
                 <TextView
                     android:text="Car Insurance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtSec2CarIns" />
+                    android:id="@+id/txtvSec2CarIns"
+                    android:layout_below="@+id/txtvSec2Pet-Gas"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="200dp"
+                    android:textColor="#ff000000"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:maxLines="5"
+                    android:paddingBottom="30dp"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:layout_marginBottom="0.0dp"
+                    android:layout_marginTop="0.0dp" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2CarInsAmnt"
+                    android:layout_below="@+id/txtSec2Pet-GasAmnt"
+                    android:layout_marginLeft="200dp"
+                    android:text="$"
+                    android:paddingBottom="60dp"
+                    android:maxLines="1" />
+                <TextView
+                    android:text="Maintenance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2Maintenance"
+                    android:layout_below="@+id/txtvSec2CarIns"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="200dp"
+                    android:textColor="#ff000000"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:paddingBottom="35dp"
+                    android:textAlignment="center"
+                    android:paddingTop="35dp" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2Maintenannce"
+                    android:layout_below="@+id/txtSec2CarInsAmnt"
+                    android:layout_marginLeft="200dp"
+                    android:text="$"
+                    android:paddingBottom="60dp"
+                    android:maxLines="1" />
+                <TextView
+                    android:text="Other/Miscellaneous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2Other"
+                    android:layout_below="@+id/txtvSec2Maintenance"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="200dp"
+                    android:textColor="#ff000000"
+                    android:textStyle="italic"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:paddingBottom="32dp"
+                    android:paddingTop="40dp"
+                    android:textAlignment="center" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2Other"
+                    android:layout_below="@+id/txtSec2Maintenannce"
+                    android:layout_marginLeft="200dp"
+                    android:text="$"
+                    android:paddingBottom="60dp"
+                    android:maxLines="1" />
             </RelativeLayout>
+
+            <TextView
+                android:text="5. Since you chose 'No' for question 4, choose the transportation service(s) that you will use to travel to and from college:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs4"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffffff00"
+                android:maxLines="10"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp" />
+            <CheckBox
+                android:text="Bus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkboxSec2Qs5Opt1"
+                android:buttonTint="#ffd50000"
+                android:textSize="18dp"
+                android:textColor="#ffd50000" />
+            <CheckBox
+                android:text="Railways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkboxSec2Qs5Opt2"
+                android:buttonTint="#ffd50000"
+                android:textSize="18dp"
+                android:textColor="#ffd50000" />
+            <CheckBox
+                android:text="Uber or similar services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkboxSec2Qs5Opt3"
+                android:buttonTint="#ffd50000"
+                android:textSize="18dp"
+                android:textColor="#ffd50000"
+                android:maxLines="2" />
+            <CheckBox
+                android:text="Friend's Car/Motorbike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkboxSec2Qs5Opt4"
+                android:buttonTint="#ffd50000"
+                android:textSize="18dp"
+                android:textColor="#ffd50000"
+                android:maxLines="2" />
+            <TextView
+                android:text="6. Please fill in the asked information:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Qs6"
+                android:textColor="#ffffff00"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp" />
+            <TextView
+                android:text="If you use Uber or similar services, please fill in the amount spent per month in the textbox below:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2ForUberQs5"
+                android:textColor="#ff1a237e"
+                android:textSize="18dp"
+                android:textStyle="italic|bold"
+                android:paddingBottom="10dp"
+                android:maxLines="6" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec2UberAmnt"
+                android:layout_marginRight="275dp"
+                android:text="$"
+                android:textColor="#ff000000"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:maxLines="1" />
+            <TextView
+                android:text="If you use a bus or the railways, select one of the options below:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec2Bus-TrainQs5"
+                android:textColor="#ff1a237e"
+                android:textSize="18dp"
+                android:textStyle="italic|bold"
+                android:maxLines="6"
+                android:paddingBottom="5dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec2Bus-TrainQs5Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily payment"
+                    android:id="@+id/rdbtnSec2Qs5"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:text="Enter the cost below for a month:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2DailyPayInfo"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:textSize="18dp"
+                    android:maxLines="3"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2DailyPayAmnt"
+                    android:layout_marginRight="275dp"
+                    android:text="$"
+                    android:textColor="#ff000000"
+                    android:paddingBottom="10dp"
+                    android:maxLines="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Pass"
+                    android:id="@+id/rdbtnSec2Qs5MonthlyPass"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester Pass"
+                    android:id="@+id/rdbtnSec2Qs5SemPass"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yearly Pass"
+                    android:id="@+id/rdbtnSec2Qs5YearlyPass"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <TextView
+                    android:text="Enter the cost of the pass for a month OR a year OR per Semester."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2PassInfo"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:textSize="18dp"
+                    android:maxLines="5"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp" />
+                <TextView
+                    android:text="Note: Even if you enter in the amount for a Yearly Pass or a per Semester Pass, the amount entered below WILL be taken in at the time of calculation."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvSec2PassInfo"
+                    android:textStyle="bold|italic"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:maxLines="8"
+                    android:paddingBottom="10dp" />
+                <EditText
+                    android:inputType="numberDecimal|number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSec2PassAmnt"
+                    android:layout_marginRight="275dp"
+                    android:text="$"
+                    android:textColor="#ff000000"
+                    android:maxLines="1" />
+            </RadioGroup>
+            <TextView
+                android:text="Click on the 'Proceed' button below to move on to Section 3:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConclusiveInfoSC5"
+                android:textColor="#ff1a237e"
+                android:textStyle="bold|italic"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp" />
+            <Button
+                android:text="Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProceedSC5"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000" />
 
         </TableLayout>
 

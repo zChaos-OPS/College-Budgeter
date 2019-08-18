@@ -17,7 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtInfo"
+        android:id="@+id/txtInfoSC2"
         android:textAlignment="center"
         android:textColor="#ff0002e0"
         android:textStyle="bold|italic"
@@ -44,7 +44,9 @@
                 android:id="@+id/InfoQs1SC2"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:textColor="#ffffff00" />
+                android:textColor="#ffffff00"
+                android:maxLines="2"
+                android:paddingBottom="5dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,7 +54,9 @@
                 android:text="Ans: College Budgeter is an app that will help you calculate your monthly expenses while you are/will be at college."
                 android:textColor="#ffd50000"
                 android:textSize="18dp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:paddingBottom="10dp"
+                android:maxLines="9" />
             <TextView
                 android:text="2. Is the value calculated by this app accurate?"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -61,11 +65,9 @@
                 android:id="@+id/InfoQs2SC2"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace1SC2" />
+                android:textStyle="bold"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
             <TextView
                 android:text="Ans: No."
                 android:layout_width="match_parent"
@@ -73,11 +75,9 @@
                 android:id="@+id/InfoQs2AnsSC2"
                 android:textStyle="normal"
                 android:textColor="#ffd50000"
-                android:textSize="18dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace2SC2" />
+                android:textSize="18dp"
+                android:paddingBottom="10dp"
+                android:maxLines="1" />
             <TextView
                 android:text="3. How does this app calculate the montly expenses?"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -86,7 +86,9 @@
                 android:id="@+id/InfoQs3SC2"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
             <TextView
                 android:text="Ans: College Budgeter calculates the monthly expenses based on multiple choice questions (with usually one or more fill-ins at the end) on several categories such as Shopping, Transportation,  Utilities etc. "
                 android:layout_width="match_parent"
@@ -94,11 +96,9 @@
                 android:id="@+id/InfoQs3AnsSc2"
                 android:textStyle="normal"
                 android:textSize="18dp"
-                android:textColor="#ffd50000" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace3SC2" />
+                android:textColor="#ffd50000"
+                android:maxLines="15"
+                android:paddingBottom="10dp" />
             <TextView
                 android:text="4. Does this app store the options and the fill-ins I enter during the usage of this app? "
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -107,7 +107,9 @@
                 android:id="@+id/InfoQs4SC2"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:maxLines="7"
+                android:paddingBottom="5dp" />
             <TextView
                 android:text="Ans: No. The app deletes the data selected and entered immediately after the results are given and you click on 'OK', or after exporting the results if you selected that option. "
                 android:layout_width="match_parent"
@@ -115,11 +117,9 @@
                 android:id="@+id/InfoQs4AnsSC2"
                 android:textColor="#ffd50000"
                 android:textStyle="normal"
-                android:textSize="18dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace4SC2" />
+                android:textSize="18dp"
+                android:maxLines="10"
+                android:paddingBottom="10dp" />
             <TextView
                 android:text="5. Does this app share the results with anyone or any organization?"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -128,7 +128,9 @@
                 android:id="@+id/InfoQs5SC2"
                 android:textColor="#ffffff00"
                 android:textStyle="bold"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:maxLines="5"
+                android:paddingBottom="5dp" />
             <TextView
                 android:text="Ans: No. We value your concerns of your monthly expenses/budget being given to unauthorized people or organizations, and hence we would NEVER, under any circumstance, share the details you enter into this app to anyone or any organization, for any reason."
                 android:layout_width="match_parent"
@@ -136,11 +138,9 @@
                 android:id="@+id/InfoQs5AnsSC2"
                 android:textColor="#ffd50000"
                 android:textSize="18dp"
-                android:textStyle="normal" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace5SC2" />
+                android:textStyle="normal"
+                android:maxLines="14"
+                android:paddingBottom="10dp" />
             <TextView
                 android:text="6. Does this app contain ads?"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -149,7 +149,9 @@
                 android:id="@+id/InfoQs6SC2"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:maxLines="2"
+                android:paddingBottom="5dp" />
             <TextView
                 android:text="Ans: No. We know how annoying ads are for user experience. We faced a tough decison. Ad Revenue and bad User Experience or no ads and good User Experience? We chose the latter."
                 android:layout_width="match_parent"
@@ -157,11 +159,9 @@
                 android:id="@+id/InfoQs6AnsSC2"
                 android:textColor="#ffd50000"
                 android:textStyle="normal"
-                android:textSize="18dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EmptySpace6SC2" />
+                android:textSize="18dp"
+                android:maxLines="10"
+                android:paddingBottom="10dp" />
             <TextView
                 android:text="That marks the end of the Info Section. Click on the 'Proceed' button to see the categories you will asked questions on."
                 android:layout_width="match_parent"
@@ -170,7 +170,8 @@
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
                 android:textColor="#ff1a237e"
-                android:textSize="19dp" />
+                android:textSize="19dp"
+                android:maxLines="7" />
             <Button
                 android:text="Proceed"
                 android:layout_width="match_parent"
@@ -180,7 +181,8 @@
                 android:textStyle="bold"
                 android:layout_marginRight="100dp"
                 android:layout_marginLeft="100dp"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000"/>
         </TableLayout>
 
     </ScrollView>

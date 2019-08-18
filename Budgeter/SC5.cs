@@ -12,20 +12,14 @@ using Android.Widget;
 
 namespace Budgeter
 {
-    [Activity(Label = "SC3")]
-    public class SC3 : Activity
+    [Activity(Label = "SC5")]
+    public class SC5 : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.SC3);
 
-            Button btnScreen4 = FindViewById<Button>(Resource.Id.btnProceedSC3);
-
-            btnScreen4.Click += (sender, e) => {
-                Intent Screen4 = new Intent(this, typeof(SC4));
-                StartActivity(Screen4);
-            };
+            SetContentView(Resource.Layout.SC5);
 
             // Create your application here
         }

@@ -72,6 +72,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SC2.cs" />
     <Compile Include="SC3.cs" />
+    <Compile Include="SC4.cs" />
+    <Compile Include="SC5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
