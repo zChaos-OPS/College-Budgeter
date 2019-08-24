@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BudgeterLib;
 
 using Android.App;
 using Android.Content;
@@ -22,6 +23,7 @@ namespace Budgeter
             Button btnScreen5 = FindViewById<Button>(Resource.Id.btnProceedSC4);
 
             btnScreen5.Click += (sender, e) => {
+                //Global.budget.SetScreen1Option();
                 Intent Screen5 = new Intent(this, typeof(SC5));
                 StartActivity(Screen5);
             };

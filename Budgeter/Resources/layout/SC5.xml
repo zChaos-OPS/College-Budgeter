@@ -241,10 +241,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtSec2CarExpAmnt"
-                    android:text="$"
                     android:layout_marginLeft="200dp"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:hint="$" />
                 <TextView
                     android:text="Petroleum/Gas Expenses"
                     android:layout_width="match_parent"
@@ -269,7 +269,8 @@
                     android:layout_marginLeft="200dp"
                     android:text="$"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" />
+                    android:maxLines="1" 
+                    android:hint="$"/>
                 <TextView
                     android:text="Car Insurance"
                     android:layout_width="match_parent"
@@ -294,9 +295,9 @@
                     android:id="@+id/txtSec2CarInsAmnt"
                     android:layout_below="@+id/txtSec2Pet-GasAmnt"
                     android:layout_marginLeft="200dp"
-                    android:text="$"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" />
+                    android:maxLines="1" 
+                    android:hint="$"/>
                 <TextView
                     android:text="Maintenance"
                     android:layout_width="match_parent"
@@ -319,9 +320,9 @@
                     android:id="@+id/txtSec2Maintenannce"
                     android:layout_below="@+id/txtSec2CarInsAmnt"
                     android:layout_marginLeft="200dp"
-                    android:text="$"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" />
+                    android:maxLines="1" 
+                />
                 <TextView
                     android:text="Other/Miscellaneous"
                     android:layout_width="match_parent"
