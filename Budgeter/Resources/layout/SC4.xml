@@ -161,7 +161,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/txtSec1Qs3Ans"
                 android:layout_marginRight="275dp"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:hint="$" />
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 2:"
                 android:layout_width="match_parent"
