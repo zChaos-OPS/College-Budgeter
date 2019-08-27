@@ -267,9 +267,8 @@
                     android:id="@+id/txtSec2Pet-GasAmnt"
                     android:layout_below="@+id/txtSec2CarExpAmnt"
                     android:layout_marginLeft="200dp"
-                    android:text="$"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" 
+                    android:maxLines="1"
                     android:hint="$"/>
                 <TextView
                     android:text="Car Insurance"
@@ -321,7 +320,8 @@
                     android:layout_below="@+id/txtSec2CarInsAmnt"
                     android:layout_marginLeft="200dp"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" 
+                    android:maxLines="1"
+                    android:hint="$" 
                 />
                 <TextView
                     android:text="Other/Miscellaneous"
@@ -345,9 +345,9 @@
                     android:id="@+id/txtSec2Other"
                     android:layout_below="@+id/txtSec2Maintenannce"
                     android:layout_marginLeft="200dp"
-                    android:text="$"
                     android:paddingBottom="60dp"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:hint="$" />
             </RelativeLayout>
 
             <TextView
@@ -422,11 +422,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/txtSec2UberAmnt"
                 android:layout_marginRight="275dp"
-                android:text="$"
                 android:textColor="#ff000000"
                 android:paddingBottom="10dp"
                 android:paddingTop="5dp"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:hint="$" />
             <TextView
                 android:text="If you use a bus or the railways, select one of the options below:"
                 android:layout_width="match_parent"
@@ -468,10 +468,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/txtSec2DailyPayAmnt"
                     android:layout_marginRight="275dp"
-                    android:text="$"
                     android:textColor="#ff000000"
                     android:paddingBottom="10dp"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:hint="$" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -523,9 +523,9 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/txtSec2PassAmnt"
                     android:layout_marginRight="275dp"
-                    android:text="$"
                     android:textColor="#ff000000"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:hint="$" />
             </RadioGroup>
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 3:"

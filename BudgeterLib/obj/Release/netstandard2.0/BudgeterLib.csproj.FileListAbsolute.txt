@@ -1,9 +1,0 @@
-C:\GitHub\College-Budgeter\BudgeterLib\bin\Release\netstandard2.0\BudgeterLib.deps.json
-C:\GitHub\College-Budgeter\BudgeterLib\bin\Release\netstandard2.0\BudgeterLib.dll
-C:\GitHub\College-Budgeter\BudgeterLib\bin\Release\netstandard2.0\BudgeterLib.pdb
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.csprojAssemblyReference.cache
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.csproj.CoreCompileInputs.cache
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.AssemblyInfoInputs.cache
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.AssemblyInfo.cs
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.dll
-C:\GitHub\College-Budgeter\BudgeterLib\obj\Release\netstandard2.0\BudgeterLib.pdb
