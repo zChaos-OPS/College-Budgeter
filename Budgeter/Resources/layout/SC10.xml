@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ff05c9fb"
+    android:id="@+id/SC10">
+     <TextView
+        android:text="Section 7: Eating Habits "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec7TopSC10"
+        android:textColor="#ff0002e0"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:paddingBottom="18dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/ScrollBarSC10" 
+     <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/TableLaySC9">
+            <TextView
+                android:text="1.You eat:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec6Qs1"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdgrpSec7Qs1Ans">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Only at home"
+            android:id="@+id/rdbtnSec7Qs1Opt1"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostly at home"
+            android:id="@+id/rdbtnSec7Qs1Opt2"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evenly at both home and outside"
+            android:id="@+id/rdbtnSec7Qs1Opt3"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostly outside"
+            android:id="@+id/rdbtnSec7Qs1Opt4"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only outside"
+            android:id="@+id/rdbtnSec7Qs1Opt5"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+
+    </RadioGroup>
+         <TextView
+            android:text="2.You usually spend; on restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvSec7Qs2"
+            android:textStyle="bold"
+            android:textColor="#ffffff00"
+            android:textSize="20dp"
+            android:maxLines="4"
+            android:paddingBottom="5dp" />
+     <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdgrpSec7Qs2Ans">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Less than $50"
+            android:id="@+id/rdbtnSec7Qs1Opt1"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More or near $50"
+            android:id="@+id/rdbtnSec7Qs1Opt2"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More than $100"
+            android:id="@+id/rdbtnSec7Qs1Opt3"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+    </RadioGroup>
+        <TextView
+            android:text="Click on the 'Proceed' button below to move on to Section 8:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConclusiveInfoSC9"
+            android:textColor="#ff1a237e"
+            android:textStyle="bold|italic"
+            android:textSize="19dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp" />
+        <Button
+            android:text="Proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnProceedSC9"
+            android:backgroundTint="#ff00e5ff"
+            android:textStyle="bold"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:textColor=#ff000000" />
+  
+
+         </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
