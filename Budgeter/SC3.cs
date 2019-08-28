@@ -22,12 +22,11 @@ namespace Budgeter
 
             Button btnScreen4 = FindViewById<Button>(Resource.Id.btnProceedSC3);
 
-            btnScreen4.Click += (sender, e) => {
+            btnScreen4.Click += (sender, e) =>
+            {
                 Intent Screen4 = new Intent(this, typeof(SC4));
                 StartActivity(Screen4);
             };
-
-            // Create your application here
         }
     }
 }

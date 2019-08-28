@@ -544,11 +544,21 @@
                 android:id="@+id/btnProceedSC5"
                 android:backgroundTint="#ff00e5ff"
                 android:textStyle="bold"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="250dp"
                 android:layout_marginTop="10dp"
                 android:textColor="#ff000000" />
-
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBackSC5"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-49dp"
+                android:textColor="#ff000000"/>
         </TableLayout>
 
     </ScrollView>

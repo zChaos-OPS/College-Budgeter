@@ -90,7 +90,7 @@
                 android:maxLines="4"
                 android:paddingBottom="5dp" />
             <TextView
-                android:text="Ans: College Budgeter calculates the monthly expenses based on multiple choice questions (with usually one or more fill-ins at the end) on several categories such as Shopping, Transportation,  Utilities etc. "
+                android:text="Ans: College Budgeter calculates the monthly expenses based on multiple choice questions and several fill-ins on several categories such as Shopping, Transportation,  Utilities etc. "
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/InfoQs3AnsSc2"
