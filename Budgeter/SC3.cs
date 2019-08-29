@@ -27,6 +27,14 @@ namespace Budgeter
                 Intent Screen4 = new Intent(this, typeof(SC4));
                 StartActivity(Screen4);
             };
+
+            Button btnScreen2 = FindViewById<Button>(Resource.Id.btnBackSC3);
+
+            btnScreen2.Click += (sender, e) =>
+            {
+                Intent Screen2 = new Intent(this, typeof(SC2));
+                StartActivity(Screen2);
+            };
         }
     }
 }

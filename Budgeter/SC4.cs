@@ -28,7 +28,15 @@ namespace Budgeter
                 StartActivity(Screen5);
             };
 
-            // Create your application here
+            Button btnScreen3 = FindViewById<Button>(Resource.Id.btnBackSC4);
+
+            btnScreen3.Click += (sender, e) =>
+            {
+                Intent Screen3 = new Intent(this, typeof(SC3));
+                StartActivity(Screen3);
+
+                // Create your application here
+            };
         }
     }
 }

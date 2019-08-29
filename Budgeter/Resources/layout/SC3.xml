@@ -124,7 +124,8 @@
                 android:textColor="#ff1a237e"
                 android:textStyle="bold|italic"
                 android:textSize="19dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:maxLines="2" />
             <Button
                 android:text="Proceed"
                 android:layout_width="match_parent"
@@ -134,7 +135,8 @@
                 android:layout_marginLeft="250dp"
                 android:layout_marginTop="20dp"
                 android:background="#ff00e5ff"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#ff000000" />
             <Button
                 android:text="Back"
                 android:layout_width="match_parent"
@@ -144,7 +146,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="-49dp"
                 android:background="#ff00e5ff"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#ff000000" />
         </TableLayout>
 
     </ScrollView>

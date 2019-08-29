@@ -151,7 +151,8 @@
                  android:textSize="19dp"
                  android:textAlignment="center"
                  android:paddingTop="10dp" 
-                 android:paddingBottom="10dp"/>
+                 android:paddingBottom="10dp" 
+                 android:maxLines="3" />
              <Button
                  android:text="Proceed"
                  android:layout_width="match_parent"
