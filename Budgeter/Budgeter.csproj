@@ -158,7 +158,11 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <AndroidResource Include="Resources\layout\SC13.xml">
+=======
+    <AndroidResource Include="Resources\layout\SC12.xml">
+>>>>>>> origin/master
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
