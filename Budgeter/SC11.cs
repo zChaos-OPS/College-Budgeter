@@ -20,7 +20,15 @@ namespace Budgeter
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.SC11);
 
-            Button btnScreen10 = FindViewById<Button>(Resource.Id.btnBackSC11);
+            Button btnScreen12 = FindViewById<Button>(Resource.Id.btnProceedSC11);
+
+            btnScreen12.Click += (sender, e) =>
+            {
+                Intent Screen12 = new Intent(this, typeof(SC12));
+                StartActivity(Screen12);
+            };
+
+                Button btnScreen10 = FindViewById<Button>(Resource.Id.btnBackSC11);
 
             btnScreen10.Click += (sender, e) =>
             {
