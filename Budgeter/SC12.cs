@@ -20,6 +20,7 @@ namespace Budgeter
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.SC12);
 
+            //The code for the "Back" button"
             Button btnScreen11 = FindViewById<Button>(Resource.Id.btnBackSC12);
 
             btnScreen11.Click += (sender, e) =>
