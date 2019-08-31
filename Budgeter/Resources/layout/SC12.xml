@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:p4="http://xamarin.com/mono/android/designer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ff05c9fb"
+    android:id="@+id/SC12">
+    <TextView
+        android:text="Section 9: Online services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec9TopSC12"
+        android:textColor="#ff0002e0"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:paddingBottom="18dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollBarSC12">
+    
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TableLay12">
+           <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtvSec9Note"
+           android:textSize="22dp"
+           android:textStyle="bold|italic"
+           android:textColor="#ff1a237e"
+           android:text="Note: Choose the answer the applies to you the most."
+           android:paddingBottom="10dp"
+           android:maxLines="5" />
+        <TextView
+           android:text="1.Do you have/or plan to have any online subscriptions (Netflix, Live Sports, etc.)?"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtvSec9Qs1"
+           android:textStyle="bold"
+           android:textColor="#ffffff00"
+           android:textSize="20dp"
+           android:maxLines="3"
+           android:paddingBottom="5dp" />
+        <RadioGroup
+           android:minWidth="25px"
+           android:minHeight="25px"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rdgrpSec9Qs1Ans" >
+             <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec9Qs1Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+             <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec9Qs1Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+        </RadioGroup>
+         <TextView
+            android:text="2. Select your preffered way to answer the next question (Approximate)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvSec9Qs2"
+            android:textStyle="bold"
+            android:textColor="#ffffff00"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:paddingBottom="5dp" />
+         <RadioButton
+            android:text="Options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtnSec9Qs2Opt1"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"
+            android:textSize="18dp"/>
+         <RadioButton
+            android:text="Type how much you think it will cost in $"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtnSec9QsOpt2"
+            android:textSize="18dp"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+        <TextView
+            android:text="3.Select the amount of online subscriptions you plan to have"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvSec9Qs2"
+            android:textStyle="bold"
+            android:textColor="#ffffff00"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:paddingBottom="5dp" />
+        <RadioButton
+            android:text="1-10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtnSec9Qs3Opt1"
+            android:buttonTint="#ffd50000"
+            android:textSize="18dp"
+            android:textColor="#ffd50000"/>
+         <RadioButton
+            android:text=">10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbtnSec9Qs3Opt2"
+            android:textSize="18dp"
+            android:buttonTint="#ffd50000"
+            android:textColor="#ffd50000"/>
+         <TextView
+            android:text="3.Select the amount of online subscriptions you plan to have"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvSec9Qs2"
+            android:textStyle="bold"
+            android:textColor="#ffffff00"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:paddingBottom="5dp" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSec9Qs3Ans"
+            android:layout_marginRight="275dp"
+            android:maxLines="1"
+            android:hint="$" />
+        <TextView
+            android:text="Click on the 'Proceed' button below to move on to Section 9:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConclusiveInfoSC12"
+            android:textColor="#ff1a237e"
+            android:textStyle="bold|italic"
+            android:textSize="19dp"
+            android:textAlignment="center"
+            android:maxLines="5"
+            android:paddingTop="10dp" />
+        <Button
+            android:text="Proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnProceedSC12"
+            android:backgroundTint="#ff00e5ff"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff000000" />
+        <Button
+            android:text="Back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBackSC12"
+            android:backgroundTint="#ff00e5ff"
+            android:textStyle="bold"
+            android:layout_marginRight="230dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-49dp"
+            android:textColor="#ff000000"/>
+
+         </TableLayout>
+    </ScrollView>
+</LinearLayout>
