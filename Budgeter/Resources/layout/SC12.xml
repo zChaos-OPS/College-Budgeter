@@ -220,7 +220,7 @@
                     android:textColor="#ffd50000"
                     android:paddingBottom="5dp"/>
                 <RadioButton
-                    android:text=">10"
+                    android:text="I have more than 10 online services that I pay for"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rdbtnSec9Qs3Opt2"
