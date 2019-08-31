@@ -21,6 +21,7 @@ namespace Budgeter
 
             SetContentView(Resource.Layout.SC5);
 
+            //The code for the "Proceed" button
             Button btnScreen9 = FindViewById<Button>(Resource.Id.btnProceedSC5);
 
             btnScreen9.Click += (sender, e) =>
@@ -30,6 +31,7 @@ namespace Budgeter
                 StartActivity(Screen9);
             };
 
+            //The code for the "Back" button
             Button btnScreen4 = FindViewById<Button>(Resource.Id.btnBackSC5);
 
             btnScreen4.Click += (sender, e) =>

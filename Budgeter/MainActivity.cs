@@ -17,6 +17,7 @@ namespace Budgeter
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.SC1);
 
+            //The code for the "Proceed" button
             Button btnScreen2 = FindViewById<Button>(Resource.Id.btnProceedSC1);
 
             btnScreen2.Click += (sender, e) => {
