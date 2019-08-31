@@ -247,7 +247,7 @@
                 android:maxLines="1"
                 android:hint="$" />
             <TextView
-                android:text="Click on the 'Proceed' button below to move on to Section 9:"
+                android:text="Click on the 'Proceed' button below to view the results:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ConclusiveInfoSC12"
