@@ -226,7 +226,8 @@
                     android:id="@+id/rdbtnSec9Qs3Opt2"
                     android:textSize="18dp"
                     android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"/>
+                    android:textColor="#ffd50000"
+                    android:paddingBottom="5dp"/>
             </RadioGroup>
             <TextView
                 android:text="3. Enter in the total monthly expense (in $) for all your online subscriptions in the textbox below:"
