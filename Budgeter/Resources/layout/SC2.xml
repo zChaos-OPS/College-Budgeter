@@ -111,7 +111,7 @@
                 android:maxLines="7"
                 android:paddingBottom="5dp" />
             <TextView
-                android:text="Ans: No. The app deletes the data selected and entered immediately after the results are given and you click on 'OK', or after exporting the results if you selected that option. "
+                android:text="Ans: No. The app deletes the data selected and entered immediately after the results are given and you click on 'Exit', or after exporting the results if you selected the 'Save Results' option."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/InfoQs4AnsSC2"
