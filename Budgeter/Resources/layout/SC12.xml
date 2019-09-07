@@ -248,6 +248,18 @@
                 android:maxLines="1"
                 android:hint="$" />
             <TextView
+                android:text="Caution: Double check your options and entries as after you press 'Proceed', you won't be able to change them afterwards!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CautionSC12"
+                android:textColor="#ffd50000"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:maxLines="6"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
                 android:text="Click on the 'Proceed' button below to view the results:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -256,7 +268,7 @@
                 android:textStyle="bold|italic"
                 android:textSize="19dp"
                 android:textAlignment="center"
-                android:maxLines="5"
+                android:maxLines="3"
                 android:paddingTop="10dp" />
             <Button
                 android:text="Proceed"
@@ -268,7 +280,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="230dp"
                 android:layout_marginTop="10dp"
-                android:textColor="#ff000000" />
+                android:textColor="#ff000000"/>
             <Button
                 android:text="Back"
                 android:layout_width="match_parent"
