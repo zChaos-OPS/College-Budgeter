@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rdgrpSec9Qs2Ans" >
                 <RadioButton
-                    android:text="Select the number of subcriptions you have and let the app calculate an aproximate value (less accurate)"
+                    android:text="Write the number of subcriptions you have and let the app calculate an aproximate value (less accurate)"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rdbtnSec9Qs2Opt1"
@@ -114,7 +114,7 @@
                     android:textColor="#ffd50000"/>
             </RadioGroup>
             <TextView
-                android:text="3.Select the amount of online subscriptions you plan to have:"
+                android:text="3. Write the number of online subscriptions you have/will have:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec9Qs3"
@@ -123,112 +123,14 @@
                 android:textSize="20dp"
                 android:maxLines="5"
                 android:paddingBottom="5dp" />
-            <RadioGroup
-                android:minWidth="25px"
-                android:minHeight="25px"
+            <EditText
+                android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec9Qs3Ans" >
-                <RadioButton
-                    android:text="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt1"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt2"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt3"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt4"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt5"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt6"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt7"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt8"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt9"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt10"
-                    android:buttonTint="#ffd50000"
-                    android:textSize="18dp"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-                <RadioButton
-                    android:text="I have more than 10 online services that I pay for"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rdbtnSec9Qs3Opt2"
-                    android:textSize="18dp"
-                    android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"
-                    android:paddingBottom="5dp"/>
-            </RadioGroup>
+                android:id="@+id/txtSec9Qs3NoOfOnlineSubscriptions"
+                android:layout_marginRight="275dp"
+                android:maxLines="1"
+                android:hint="1, 2, 3, etc." />
             <TextView
                 android:text="3. Enter in the total monthly expense (in $) for all your online subscriptions in the textbox below:"
                 android:layout_width="match_parent"

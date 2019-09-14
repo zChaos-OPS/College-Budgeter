@@ -9,13 +9,13 @@ namespace BudgeterLib
         BudgeterModel budget = new BudgeterModel();
         public void SetScreen1Option(int monthlydress,string range,int avgNoOfClothes)
         {
-            budget.noofdressespermonth = monthlydress;
-            budget.clothingrange = range;
+            budget.NoofDressPerMonth = monthlydress;
+            budget.ClothingRange = range;
         }
 
         public void SetScreen2Option(bool walk)
         {
-            budget.walk = walk;
+            budget.Walk = walk;
         }
     }
 }
