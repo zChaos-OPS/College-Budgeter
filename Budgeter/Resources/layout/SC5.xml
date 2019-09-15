@@ -71,7 +71,8 @@
                     android:id="@+id/rdbtnSec2Qs1Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp"
+                    android:tag="true" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -79,7 +80,8 @@
                     android:id="@+id/rdbtnSec2Qs1Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="false" />
             </RadioGroup>
             <TextView
                 android:text="2. Do you/Will you use a bicycle to go to college?"
@@ -97,7 +99,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rdgrpSec2Qs2Ans"
-                android:paddingBottom="10dp">
+                android:paddingBottom="10dp"
+                android:visibility="visible">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -242,9 +245,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/txtSec2CarExpAmnt"
                     android:layout_marginLeft="200dp"
-                    android:paddingBottom="60dp"
                     android:maxLines="1"
-                    android:hint="$" />
+                    android:hint="$"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp" />
                 <TextView
                     android:text="Petroleum/Gas Expenses"
                     android:layout_width="match_parent"

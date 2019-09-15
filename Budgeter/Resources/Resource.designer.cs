@@ -3688,6 +3688,24 @@ namespace Budgeter
 			// aapt resource value: 0x7F0800BD
 			public const int radio = 2131230909;
 			
+			// aapt resource value: 0x7F0800BE
+			public const int rdbtnSec1Ans1Opt1 = 2131230910;
+			
+			// aapt resource value: 0x7F0800BF
+			public const int rdbtnSec1Ans1Opt2 = 2131230911;
+			
+			// aapt resource value: 0x7F0800C0
+			public const int rdbtnSec1Ans1Opt3 = 2131230912;
+			
+			// aapt resource value: 0x7F0800C1
+			public const int rdbtnSec1Ans1Opt4 = 2131230913;
+			
+			// aapt resource value: 0x7F0800C2
+			public const int rdbtnSec1Ans2Opt1 = 2131230914;
+			
+			// aapt resource value: 0x7F0800C3
+			public const int rdbtnSec1Ans2Opt2 = 2131230915;
+			
 			// aapt resource value: 0x7F0800C4
 			public const int rdbtnSec1Ans2Opt3 = 2131230916;
 			
@@ -3831,24 +3849,6 @@ namespace Budgeter
 			
 			// aapt resource value: 0x7F0800F3
 			public const int rdgrpSec9Qs2Ans = 2131230963;
-			
-			// aapt resource value: 0x7F0800BE
-			public const int rdSec1Ans1Opt1 = 2131230910;
-			
-			// aapt resource value: 0x7F0800BF
-			public const int rdSec1Ans1Opt2 = 2131230911;
-			
-			// aapt resource value: 0x7F0800C0
-			public const int rdSec1Ans1Opt3 = 2131230912;
-			
-			// aapt resource value: 0x7F0800C1
-			public const int rdSec1Ans1Opt4 = 2131230913;
-			
-			// aapt resource value: 0x7F0800C2
-			public const int rdSec1Ans2Opt1 = 2131230914;
-			
-			// aapt resource value: 0x7F0800C3
-			public const int rdSec1Ans2Opt2 = 2131230915;
 			
 			// aapt resource value: 0x7F08001A
 			public const int RelLaySec2 = 2131230746;
@@ -4160,7 +4160,7 @@ namespace Budgeter
 			public const int txtInfoSC2 = 2131231034;
 			
 			// aapt resource value: 0x7F08013B
-			public const int txtSec1Qs3Ans = 2131231035;
+			public const int txtSec1AvgNoOfClothes = 2131231035;
 			
 			// aapt resource value: 0x7F08013C
 			public const int txtSec2CarExpAmnt = 2131231036;

@@ -50,7 +50,6 @@
                 android:paddingBottom="10dp" />
             <TextView
                 android:text="1. How many times do you go for shopping dresses every month?"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec1Qs1"
@@ -70,34 +69,39 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="1"
-                    android:id="@+id/rdSec1Ans1Opt1"
+                    android:id="@+id/rdbtnSec1Ans1Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp"/>
+                    android:onClick="onRadioButtonClicked"
+                    android:textSize="18dp"
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2"
-                    android:id="@+id/rdSec1Ans1Opt2"
+                    android:id="@+id/rdbtnSec1Ans1Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
                     android:textSize="18dp"
-                    android:id="@+id/rdSec1Ans1Opt3"
+                    android:id="@+id/rdbtnSec1Ans1Opt3"
                     android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000" />
+                    android:textColor="#ffd50000"
+                    android:tag="3" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4 or more"
                     android:textSize="18dp"
-                    android:id="@+id/rdSec1Ans1Opt4"
+                    android:id="@+id/rdbtnSec1Ans1Opt4"
                     android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"/>
+                    android:textColor="#ffd50000"
+                    android:tag="4" />
                 </RadioGroup>
             <TextView
                 android:text="2. You typically shop:"
@@ -123,17 +127,19 @@
                     android:checked="false"
                     android:text="Expensive"
                     android:textSize="18dp"
-                    android:id="@+id/rdSec1Ans2Opt1"
+                    android:id="@+id/rdbtnSec1Ans2Opt1"
                     android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"/>
+                    android:textColor="#ffd50000"
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mid"
-                    android:id="@+id/rdSec1Ans2Opt2"
+                    android:id="@+id/rdbtnSec1Ans2Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,7 +147,8 @@
                     android:textSize="18dp"
                     android:id="@+id/rdbtnSec1Ans2Opt3"
                     android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"/>
+                    android:textColor="#ffd50000"
+                    android:tag="3" />
             </RadioGroup>
             <TextView
                 android:text="3. What is the average number of clothes you buy per month?"
@@ -159,10 +166,11 @@
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtSec1Qs3Ans"
+                android:id="@+id/txtSec1AvgNoOfClothes"
                 android:layout_marginRight="275dp"
                 android:maxLines="1"
-                android:hint="$" />
+                android:hint="$" 
+                android:tag="1"/>
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 2:"
                 android:layout_width="match_parent"
