@@ -87,18 +87,18 @@ namespace Budgeter
         //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user.
         private void rdgrpSec1Ans2Click(object sender, EventArgs e)
         {
-            RadioButton rbSec2Ans2 = (RadioButton)sender;
+            RadioButton rbSec1Ans2 = (RadioButton)sender;
 
-            shoppingRange = Convert.ToInt32(rbSec2Ans2.Tag.ToString());
+            shoppingRange = Convert.ToInt32(rbSec1Ans2.Tag.ToString());
 
             Toast.MakeText(this, shoppingRange.ToString(), ToastLength.Long).Show();
         }
-        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user.
+        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 3 was selected by the user.
         private void txtSec1Ans3Click(object sender, EventArgs e)
         {
-            EditText txtSec2Ans3 = (EditText)sender;
+            EditText txtSec1Ans3 = (EditText)sender;
 
-            AvgNoOfClothes = Convert.ToInt32(txtSec2Ans3.Tag.ToString());
+            AvgNoOfClothes = Convert.ToInt32(txtSec1Ans3.Tag.ToString());
 
             Toast.MakeText(this, AvgNoOfClothes.ToString(), ToastLength.Long).Show();
         }

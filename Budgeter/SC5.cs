@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BudgeterLib;
 
 using Android.App;
 using Android.Content;
@@ -15,67 +16,28 @@ namespace Budgeter
     [Activity(Label = "SC5")]
     public class SC5 : Activity
     {
-        private bool Walk = false;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.SC5);
 
             //The code for the "Proceed" button
             Button btnScreen9 = FindViewById<Button>(Resource.Id.btnProceedSC5);
 
-            RadioButton sec2Ans1OptYes, sec2Ans1OptNo;
-
-            sec2Ans1OptYes = (RadioButton)FindViewById(Resource.Id.rdbtnSec2Qs1Opt1);
-            sec2Ans1OptNo = (RadioButton)FindViewById(Resource.Id.rdbtnSec2Qs1Opt2);
-
             btnScreen9.Click += (sender, e) =>
             {
-                //Global.budget.SetScreen1Option();
-                
+                Intent Screen5 = new Intent(this, typeof(SC9));
+                StartActivity(Screen5);
             };
-            sec2Ans1OptYes.Click += rdSec2Ans2Click;
-            sec2Ans1OptNo.Click += rdSec2Ans2Click;
 
             //The code for the "Back" button
-            Button btnScreen4 = FindViewById<Button>(Resource.Id.btnBackSC5);
+            Button btnScreen3 = FindViewById<Button>(Resource.Id.btnBackSC4);
 
-            btnScreen4.Click += (sender, e) =>
+            btnScreen3.Click += (sender, e) =>
             {
-                Intent Screen4 = new Intent(this, typeof(SC4));
-                StartActivity(Screen4);
-
-                // Create your application here
+                Intent Screen3 = new Intent(this, typeof(SC4));
+                StartActivity(Screen3);
             };
-
-       
-
-            
-        }
-        private void MoveToSection3()
-        {
-            Intent Screen9 = new Intent(this, typeof(SC9));
-            StartActivity(Screen9);
-        }
-
-        private void rdSec2Ans2Click(object sender, EventArgs e)
-        {
-            RadioButton rb2 = (RadioButton)sender;
-
-            Walk = Convert.ToBoolean(rb2.Tag.ToString());
-            TextView sec2Qs2 = (TextView)FindViewById<TextView>(Resource.Id.txtvSec2Qs2);
-            RadioGroup rdgrpSec2Qs2Ans = (RadioGroup)FindViewById<RadioGroup>(Resource.Id.rdgrpSec2Qs2Ans);
-            if (Walk)
-            {
-                sec2Qs2.Visibility = ViewStates.Gone;
-
-                rdgrpSec2Qs2Ans.Visibility = ViewStates.Gone;
-            }else
-            {
-                sec2Qs2.Visibility = ViewStates.Visible;
-                rdgrpSec2Qs2Ans.Visibility = ViewStates.Visible;
-            }
         }
     }
 }
