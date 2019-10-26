@@ -5,14 +5,14 @@ namespace BudgeterLib
     public class BudgeterModel
     {
         //Screen 4 Stuff
-        public int NoofDressPerMonth { get; set; }
-        public string ClothingRange { get; set; }
+        public int ShoppingTimesPerMonth { get; set; }
+        public int ClothingRange { get; set; }
         public int AvgNoOfClothes { get; set; }
         //Screen 4 Stuff Ends
 
         //Screen 5 Stuff
-        public bool Walk { get; set; }
-        public bool Bicycle { get; set; }
+        public int Walk { get; set; }
+        public int Bicycle { get; set; }
         public bool PersonalVehicle { get; set; }
         public bool UsePersoanalVehicle { get; set; }
         public double CarExpAmnt { get; set; }

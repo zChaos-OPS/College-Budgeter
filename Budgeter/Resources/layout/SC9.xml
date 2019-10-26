@@ -62,8 +62,9 @@
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
-                android:hint="$" 
-                android:paddingBottom="10dp" />
+                android:hint="$"
+                android:paddingBottom="10dp"
+                android:tag="1" />
             <TextView
                 android:text="2. Enter the amount (in dollars) you pay per month for Medical Insurance:"
                 android:layout_width="match_parent"
@@ -82,8 +83,9 @@
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
-                android:hint="$" 
-                android:paddingBottom="10dp" />
+                android:hint="$"
+                android:paddingBottom="10dp"
+                android:tag="2" />
             <TextView
                 android:text="3. Enter the amount (in dollars) you pay per month for Dental Insurance:"
                 android:layout_width="match_parent"
@@ -103,7 +105,8 @@
                 android:textColor="#ff000000"
                 android:maxLines="1"
                 android:hint="$"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:tag="3" />
             <TextView
                 android:text="4. Enter the amount (in dollars) you pay per month for Life Insurance:"
                 android:layout_width="match_parent"
@@ -123,17 +126,44 @@
                 android:textColor="#ff000000"
                 android:maxLines="1"
                 android:hint="$"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:tag="4" />
             <TextView
-                android:text="Note: If you pay any other insurance(s) other than the ones listed above, please calculate the amount (in $) for that/all those insurance(s) and enter the value in the text box below. If this doesn't apply to you, kindly enter in a 0 in the text box:"
+                android:text="5. Is there any other insurance(s) that you pay?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec6OtherIns"
                 android:textStyle="bold"
-                android:textColor="#ffff3d00"
+                android:textColor="#ffffff00"
                 android:textSize="20dp"
                 android:maxLines="14"
                 android:paddingBottom="5dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec6Qs5Ans"
+                android:paddingBottom="10dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec6Qs5OptYes"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec6Qs5OptNo"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="2" />
+            </RadioGroup>
             <EditText
                 android:inputType="numberDecimal|number"
                 android:layout_width="match_parent"
@@ -143,7 +173,9 @@
                 android:textColor="#ff000000"
                 android:maxLines="1"
                 android:hint="$"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:tag="3"
+                android:visibility="invisible" />
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 7:"
                 android:layout_width="match_parent"

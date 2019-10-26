@@ -151,7 +151,7 @@
                     android:tag="3" />
             </RadioGroup>
             <TextView
-                android:text="3. What is the average number of clothes you buy per month?"
+                android:text="3. What is the average number of clothes you buy per month? (Please enter a number greater than 0.)"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -167,9 +167,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtSec1AvgNoOfClothes"
-                android:layout_marginRight="275dp"
+                android:layout_marginRight="230dp"
                 android:maxLines="1"
-                android:hint="$" 
+                android:hint="Number of clothes"
                 android:tag="1"/>
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 2:"

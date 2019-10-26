@@ -12,7 +12,6 @@
     android:paddingBottom="10dp"
     android:background="#ff05c9fb"
     android:id="@+id/SC5">
-
     <TextView
         android:text="Section 2: Transportation"
         android:layout_width="match_parent"
@@ -72,7 +71,7 @@
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp"
-                    android:tag="true" />
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -81,7 +80,7 @@
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp"
-                    android:tag="false" />
+                    android:tag="2" />
             </RadioGroup>
             <TextView
                 android:text="2. Do you/Will you use a bicycle to go to college?"
@@ -108,7 +107,8 @@
                     android:id="@+id/rdbtnSec2Qs2Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,7 +116,8 @@
                     android:id="@+id/rdbtnSec2Qs2Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="2" />
             </RadioGroup>
             <TextView
                 android:text="3. Do you own a personal car/motorbike?"

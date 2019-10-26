@@ -15,6 +15,7 @@ namespace Budgeter
 {
     public static class Global
     {
-        public static BudgeterProvider budget = new BudgeterProvider();
+        public static BudgeterProvider budgetProvider = new BudgeterProvider();
+        public static BudgeterModel budgetModel = new BudgeterModel();
     }
 }
