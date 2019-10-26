@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ff05c9fb"
+    android:id="@+id/SC8">
+    <TextView
+        android:text="Section 5: Bills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec5TopSC8"
+        android:textColor="#ff0002e0"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:paddingBottom="18dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollBarSC8">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/TableLaySC8">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec9Note"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff1a237e"
+                android:text="Note: If one or more of the Bills doesn't apply to you, do NOT leave the field blank. Enter in a 0 in the text field."
+                android:paddingBottom="10dp"
+                android:maxLines="7" />
+            <TextView
+                android:text="1. Data Bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs1"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5DataBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$" 
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="2. Internet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs2"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5InternetBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$" 
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="3. PG&E Or Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs3"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5PG&EBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="4. Garbage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs4"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5GarbageBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="5. Water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs4"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5WaterBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="6. Rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5Qs4"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5RentBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="Note: If you pay any other Type of Bill(s) other than the ones listed above, please calculate the amount (in $) for that/all those Billsurance(s) and enter the value in the text box below. If this doesn't apply to you, kindly enter in a 0 in the text box:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec5OtherBills"
+                android:textStyle="bold"
+                android:textColor="#ffff3d00"
+                android:textSize="20dp"
+                android:maxLines="14"
+                android:paddingBottom="5dp" />
+            <EditText
+                android:inputType="numberDecimal|number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSec5OtherBillsAmnt"
+                android:layout_marginRight="275dp"
+                android:textColor="#ff000000"
+                android:maxLines="1"
+                android:hint="$"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:text="Click on the 'Proceed' button below to move on to Section 7:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConclusiveInfoSC8"
+                android:textColor="#ff1a237e"
+                android:textStyle="bold|italic"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp" 
+                android:maxLines="3" />
+            <Button
+                android:text="Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProceedSC8"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000" />
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBackSC8"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-49dp"
+                android:textColor="#ff000000" />
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

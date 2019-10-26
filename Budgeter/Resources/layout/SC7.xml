@@ -10,12 +10,12 @@
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     android:background="#ff05c9fb"
-    android:id="@+id/SC11">
+    android:id="@+id/SC7">
     <TextView
-        android:text="Section 8: Home Maintenance"
+        android:text="Section 4: Utilities (Internet and Mobile Plans etc.)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtvSec8TopSC11"
+        android:id="@+id/txtvSec4TopSC7"
         android:textColor="#ff0002e0"
         android:textSize="23dp"
         android:textStyle="bold|italic"
@@ -27,16 +27,16 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ScrollBarSC11" >
+        android:id="@+id/ScrollBarSC7" >
         <TableLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:stretchColumns="1"
-            android:id="@+id/TableLaySC11">
+            android:id="@+id/TableLaySC7">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Note"
+                android:id="@+id/txtvSec4Note"
                 android:textSize="22dp"
                 android:textStyle="bold|italic"
                 android:textColor="#ff1a237e"
@@ -44,10 +44,10 @@
                 android:paddingBottom="10dp"
                 android:maxLines="5" />
             <TextView
-                android:text="1.Do you buy the kitchen maintenance in a bulk for extended periods of time or only for a monthly basis?"
+                android:text="1. Will you have internet service (not mobile data) like Comcast at the place you will be staying?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Qs1"
+                android:id="@+id/txtvSec4Qs1"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
@@ -58,12 +58,12 @@
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec8Qs1Ans">
+                android:id="@+id/rdgrpSec4Qs1Ans">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For an extended period of time"
-                    android:id="@+id/rdbtnSec8Qs1Opt1"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec4Qs1Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp"
@@ -71,25 +71,17 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For a monthly basis"
-                    android:id="@+id/rdbtnSec8Qs1Opt2"
-                    android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"
-                    android:textSize="18dp" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="For a weekly basis"
-                    android:id="@+id/rdbtnSec8Qs1Opt3"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec4Qs1Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
             </RadioGroup>
             <TextView
-                android:text="2. Do you buy the toilet maintenance in a bulk for extended periods of time or only for a monthly basis?"
+                android:text="2. If yes to previous question: How much speed will you have?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Qs2"
+                android:id="@+id/txtvSec4Qs2"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
@@ -100,12 +92,12 @@
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec8Qs2Ans">
+                android:id="@+id/rdgrpSec4Qs2Ans">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For an extended period of time"
-                    android:id="@+id/rdbtnSec8Qs2Opt1"
+                    android:text="High"
+                    android:id="@+id/rdbtnSec4Qs2Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp"
@@ -113,25 +105,25 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For a monthly basis"
-                    android:id="@+id/rdbtnSec8Qs2Opt2"
+                    android:text="Medium"
+                    android:id="@+id/rdbtnSec4Qs2Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For a weekly basis"
-                    android:id="@+id/rdbtnSec8Qs2Opt3"
+                    android:text="Low"
+                    android:id="@+id/rdbtnSec4Qs2Opt3"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
             </RadioGroup>
             <TextView
-                android:text="3. Do you buy the room maintenance in a bulk for extended periods of time or only for a monthly basis?"
+                android:text="3. In your mobile plan, how much internet (in GB) will you have?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Qs3"
+                android:id="@+id/txtvSec4Qs3"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
@@ -142,12 +134,12 @@
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec8Qs3Ans">
+                android:id="@+id/rdgrpSec4Qs3Ans">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For an extended period of time"
-                    android:id="@+id/rdbtnSec8Qs3Opt1"
+                    android:text="No internet at all"
+                    android:id="@+id/rdbtnSec4Qs3Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp"
@@ -155,25 +147,41 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For a monthly basis"
-                    android:id="@+id/rdbtnSec8Qs3Opt2"
+                    android:text="Less than 1GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="For a weekly basis"
-                    android:id="@+id/rdbtnSec8Qs3Opt3"
+                    android:text="1-5GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt3"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5-10GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt4"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unlimited plan"
+                    android:id="@+id/rdbtnSec4Qs3Opt5"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
             </RadioGroup>
             <TextView
-                android:text="4. Do you have a backyard in the house you live?"
+                android:text="4. Will you have a cable plan?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Qs4"
+                android:id="@+id/txtvSec4Qs4"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
@@ -184,12 +192,28 @@
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec8Qs4Ans">
+                android:id="@+id/rdgrpSec4Qs4Ans">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yes"
-                    android:id="@+id/rdbtnSec8Qs4Opt1"
+                    android:text="Yes, included with Internet plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, included with Mobile plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, but not from my Internet or Mobile Plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
@@ -197,58 +221,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
-                    android:id="@+id/rdbtnSec8Qs4Opt2"
+                    android:id="@+id/rdbtnSec4Qs4Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
                     android:textSize="18dp" />
             </RadioGroup>
-            <TextView
-                android:text="4a. Do you buy the backyard maintenance in a bulk for extended periods of time or only for a monthly basis?"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtvSec8Q4a"
-                android:textStyle="bold"
-                android:textColor="#ffff3d00"
-                android:textSize="20dp"
-                android:maxLines="6"
-                android:paddingBottom="5dp" />
-            <RadioGroup
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/rdgrpSec8Qs2Ans">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="For an extended period of time"
-                    android:id="@+id/rdbtnSec8Qs2Opt1"
-                    android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"
-                    android:textSize="18dp"
-                    android:maxLines="2" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="For a monthly basis"
-                    android:id="@+id/rdbtnSec8Qs2Opt2"
-                    android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"
-                    android:textSize="18dp" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="For a weekly basis"
-                    android:id="@+id/rdbtnSec8Qs2Opt3"
-                    android:buttonTint="#ffd50000"
-                    android:textColor="#ffd50000"
-                    android:textSize="18dp" />
-            </RadioGroup>
+           
             <TextView
                 android:text="Click on the 'Proceed' button below to move on to Section 8:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/ConclusiveInfoSC11"
+                android:id="@+id/ConclusiveInfoSC7"
                 android:textColor="#ff1a237e"
                 android:textStyle="bold|italic"
                 android:textSize="19dp"
@@ -260,7 +243,7 @@
                 android:text="Proceed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnProceedSC11"
+                android:id="@+id/btnProceedSC7"
                 android:backgroundTint="#ff00e5ff"
                 android:textStyle="bold"
                 android:layout_marginRight="10dp"
@@ -271,7 +254,7 @@
                 android:text="Back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnBackSC11"
+                android:id="@+id/btnBackSC7"
                 android:backgroundTint="#ff00e5ff"
                 android:textStyle="bold"
                 android:layout_marginRight="250dp"
