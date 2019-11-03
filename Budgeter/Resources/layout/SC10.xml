@@ -63,42 +63,47 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Only at home"
-                    android:id="@+id/rdbtnSec7Qs1Opt1"
+                    android:id="@+id/rdbtnSec7Ans1Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mostly at home"
-                    android:id="@+id/rdbtnSec7Qs1Opt2"
+                    android:id="@+id/rdbtnSec7Ans1Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Evenly at both home and outside"
-                    android:id="@+id/rdbtnSec7Qs1Opt3"
+                    android:id="@+id/rdbtnSec7Ans1Opt3"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="3" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mostly outside"
-                    android:id="@+id/rdbtnSec7Qs1Opt4"
+                    android:id="@+id/rdbtnSec7Ans1Opt4"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="4" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Only outside"
-                    android:id="@+id/rdbtnSec7Qs1Opt5"
+                    android:id="@+id/rdbtnSec7Ans1Opt5"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="5" />
             </RadioGroup>
             <TextView
                 android:text="2.Your meal, in total, costs you about:"
@@ -120,26 +125,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$1 - $100"
-                    android:id="@+id/rdbtnSec7Qs1Opt1"
+                    android:id="@+id/rdbtnSec7Ans2Opt1"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="1" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$100 - $200"
-                    android:id="@+id/rdbtnSec7Qs1Opt2"
+                    android:id="@+id/rdbtnSec7Ans2Opt2"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="2" />
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="More than $300"
-                    android:id="@+id/rdbtnSec7Qs1Opt3"
+                    android:id="@+id/rdbtnSec7Ans2Opt3"
                     android:buttonTint="#ffd50000"
                     android:textColor="#ffd50000"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:tag="3" />
              </RadioGroup>
              <TextView
                  android:text="Click on the 'Proceed' button below to move on to Section 8:"
