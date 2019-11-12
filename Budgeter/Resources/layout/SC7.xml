@@ -1,0 +1,293 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ff05c9fb"
+    android:id="@+id/SC7">
+    <TextView
+        android:text="Section 4: Utilities (Internet and Mobile Plans etc.)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvSec4TopSC7"
+        android:textColor="#ff0002e0"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textAlignment="center"
+        android:paddingBottom="18dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScrollBarSC7" >
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/TableLaySC7">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec4Note"
+                android:textSize="22dp"
+                android:textStyle="bold|italic"
+                android:textColor="#ff1a237e"
+                android:text="Note: Choose the answer the applies to you the most."
+                android:paddingBottom="10dp"
+                android:maxLines="5" />
+            <TextView
+                android:text="1. Will you have internet service (not mobile data) like Comcast at the place you will be staying?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec4Qs1"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="3"
+                android:paddingBottom="5dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec4Qs1Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/rdbtnSec4Qs1Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec4Qs1Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="2" />
+            </RadioGroup>
+            <TextView
+                android:text="2. How much speed will you have?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec4Qs2"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="6"
+                android:paddingBottom="5dp"
+                android:visibility="gone" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec4Qs2Ans"
+                android:visibility="gone">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High"
+                    android:id="@+id/rdbtnSec4Qs2Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:id="@+id/rdbtnSec4Qs2Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:id="@+id/rdbtnSec4Qs2Opt3"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="3" />
+            </RadioGroup>
+            <TextView
+                android:text="2. In your mobile plan, how much data (in GB) will you have?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec4Qs3"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="6"
+                android:paddingBottom="5dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec4Qs3Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No data at all"
+                    android:id="@+id/rdbtnSec4Qs3Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:maxLines="2"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Less than 1GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-5GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt3"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5-10GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt4"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More than 10GB"
+                    android:id="@+id/rdbtnSec4Qs3Opt5"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="5" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unlimited plan"
+                    android:id="@+id/rdbtnSec4Qs3Opt6"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="6" />
+            </RadioGroup>
+            <TextView
+                android:text="3. Will you have a cable plan?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtvSec4Qs4"
+                android:textStyle="bold"
+                android:textColor="#ffffff00"
+                android:textSize="20dp"
+                android:maxLines="4"
+                android:paddingBottom="5dp" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgrpSec4Qs4Ans">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, included with Internet plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt1"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, included with Mobile plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt2"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, but not from my Internet or Mobile Plan"
+                    android:id="@+id/rdbtnSec4Qs4Opt3"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/rdbtnSec4Qs4Opt4"
+                    android:buttonTint="#ffd50000"
+                    android:textColor="#ffd50000"
+                    android:textSize="18dp"
+                    android:tag="4" />
+            </RadioGroup>
+
+            <TextView
+                android:text="Click on the 'Proceed' button below to move on to Section 5:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConclusiveInfoSC7"
+                android:textColor="#ff1a237e"
+                android:textStyle="bold|italic"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:maxLines="3" />
+            <Button
+                android:text="Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProceedSC7"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000" />
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBackSC7"
+                android:backgroundTint="#ff00e5ff"
+                android:textStyle="bold"
+                android:layout_marginRight="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-49dp"
+                android:textColor="#ff000000" />
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -133,8 +133,8 @@ namespace Budgeter
 
             Toast.MakeText(this, shoppingTimes.ToString(), ToastLength.Long).Show();
         }
-        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user.
 
+        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user
         private void rdgrpSec1Ans2Click(object sender, EventArgs e)
         {
             RadioButton rbSec2Ans2 = (RadioButton)sender;
@@ -143,8 +143,8 @@ namespace Budgeter
 
             Toast.MakeText(this, shoppingRange.ToString(), ToastLength.Long).Show();
         }
-        //Checks for errors and if none are found, Validates the screen.
 
+        //Checks for errors and if none are found, Validates the screen.
         private bool ValidateScreen()
         {
             // ==0 signifies that the user hasn't selected an option and/or has entered in a 0 in a textbox or left the textbox empty.
@@ -153,30 +153,28 @@ namespace Budgeter
             MUST all be true or the condition is false and vice-versa. When using an Or opearator, only one of the both/several conditions MUST be true and the 
             condition will be true and vice-versa.
             */
-            //try
-            //{
+            try
+            {
                 EditText sec1AvgAmntofDress = (EditText)FindViewById(Resource.Id.txtSec1AvgNoOfClothes);
                 if (!String.IsNullOrEmpty(sec1AvgAmntofDress.Text))
-            {
-                avgNoOfClothes = Convert.ToInt32(sec1AvgAmntofDress.Text);
-            }
-            else
-            {
-                avgNoOfClothes = 0;
-            }
-                    
-
+                {
+                    avgNoOfClothes = Convert.ToInt32(sec1AvgAmntofDress.Text);
+                }
+                else
+                {
+                    avgNoOfClothes = 0;
+                }         
                 if (shoppingTimes == 0 || shoppingRange == 0 || avgNoOfClothes == 0)
                 {
                     Toast.MakeText(this, "Please answer all the questions below and then click Proceed.", ToastLength.Long).Show();
                     return false;
                 }
-            //}
-            //catch
-            //{
-            //    Toast.MakeText(this, "Enter a valid number in the textbox.", ToastLength.Long).Show();
-            //    return false;
-            //}
+            }
+            catch
+            {
+                Toast.MakeText(this, "Enter a valid number in the textbox.", ToastLength.Long).Show();
+                return false;
+            }
             return true;
         }
         //Moves on to Section2

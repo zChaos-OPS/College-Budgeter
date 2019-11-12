@@ -98,6 +98,8 @@
     <Compile Include="SC11.cs" />
     <Compile Include="SC12.cs" />
     <Compile Include="SC13.cs" />
+    <Compile Include="SC7.cs" />
+    <Compile Include="SC8.cs" />
     <Compile Include="SC9.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,6 +195,12 @@
     <AndroidResource Include="Resources\layout\SC13.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SC7.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SC8.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

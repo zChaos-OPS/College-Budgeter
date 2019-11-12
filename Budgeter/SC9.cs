@@ -21,6 +21,7 @@ namespace Budgeter
         private double lifeInsAmnt = 0;
         private int otherIns = 0;
         private double otherInsAmnt = 0;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -120,12 +121,12 @@ namespace Budgeter
             };
 
             //The code for the "Back" button
-            Button btnScreen5 = FindViewById<Button>(Resource.Id.btnBackSC9);
+            Button btnScreen8 = FindViewById<Button>(Resource.Id.btnBackSC9);
 
-            btnScreen5.Click += (sender, e) =>
+            btnScreen8.Click += (sender, e) =>
             {
-                Intent Screen5 = new Intent(this, typeof(SC5));
-                StartActivity(Screen5);
+                Intent Screen8 = new Intent(this, typeof(SC8));
+                StartActivity(Screen8);
             };
         }
         private void rdgrpSec6Ans5Click(object sender, EventArgs e)

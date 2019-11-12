@@ -36,7 +36,7 @@ namespace Budgeter
             }
 
             //The code for the "Proceed" button
-            Button btnScreen9 = FindViewById<Button>(Resource.Id.btnProceedSC5);
+            Button btnScreen7 = FindViewById<Button>(Resource.Id.btnProceedSC5);
 
             //Declaring variables for Sec2Qs1:
             RadioButton sec2Ans1OptYes, sec2Ans1OptNo;
@@ -90,7 +90,7 @@ namespace Budgeter
             sec2Ans2OptNo.Click += rdSec2Ans2Click;
             //Declaration and assigning of variables is complete for Sec2Qs2
 
-            btnScreen9.Click += (sender, e) =>
+            btnScreen7.Click += (sender, e) =>
             {
                 //Checks if the screen is validated by the validateScreen function and if good carries out the MovetoSection3 function.
                 if (ValidateScreen())
@@ -161,7 +161,7 @@ namespace Budgeter
             }
         }
 
-        private Boolean ValidateScreen()
+        private bool ValidateScreen()
         {
 
             return true;
@@ -170,8 +170,8 @@ namespace Budgeter
         {
             Global.budgetModel.Walk = walk;
 
-            Intent Screen9 = new Intent(this, typeof(SC9));
-            StartActivity(Screen9);
+            Intent Screen7 = new Intent(this, typeof(SC7));
+            StartActivity(Screen7);
         }
     }
 }

@@ -37,7 +37,10 @@ namespace BudgeterLib
         //Screen 6 Stuff Ends
 
         //Screen 7 Stuff
-
+        public int InternetServiceLikeComcast { get; set; }
+        public int InternetSpeed { get; set; }
+        public int MobileDataInGB { get; set; }
+        public int CablePlan { get; set; }
         //Screen 7 Stuff Ends
 
         //Screen 8 Stuff
