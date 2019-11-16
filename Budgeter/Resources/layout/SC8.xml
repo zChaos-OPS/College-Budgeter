@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtvSec9Note"
+                android:id="@+id/txtvSec5Note"
                 android:textSize="22dp"
                 android:textStyle="bold|italic"
                 android:textColor="#ff1a237e"
@@ -45,47 +45,49 @@
                 android:paddingBottom="10dp"
                 android:maxLines="7" />
             <TextView
-                android:text="1. Data Bill"
+                android:text="1. Enter the amount you pay monthly (in $) for your cell phone plan including data charges:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec5Qs1"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
-                android:maxLines="4"
+                android:maxLines="5"
                 android:paddingBottom="5dp" />
             <EditText
                 android:inputType="numberDecimal|number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtSec5DataBillsAmnt"
+                android:id="@+id/txtSec5CellPhonePlanAmnt"
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
-                android:hint="$" 
-                android:paddingBottom="10dp" />
+                android:hint="$"
+                android:paddingBottom="10dp"
+                android:tag="1" />
             <TextView
-                android:text="2. Internet"
+                android:text="2. Enter the amount you pay monthly (in $) for your internet, if an Internet Service Provider, like Comast, provides you with internet at your home, typically with a modem and a router:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec5Qs2"
                 android:textStyle="bold"
                 android:textColor="#ffffff00"
                 android:textSize="20dp"
-                android:maxLines="4"
+                android:maxLines="8"
                 android:paddingBottom="5dp" />
             <EditText
                 android:inputType="numberDecimal|number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtSec5InternetBillsAmnt"
+                android:id="@+id/txtSec5InternetBillAmnt"
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
-                android:hint="$" 
-                android:paddingBottom="10dp" />
+                android:hint="$"
+                android:paddingBottom="10dp"
+                android:tag="2" />
             <TextView
-                android:text="3. PG&E Or Other"
+                android:text="3. Enter the amount you pay monthly (in $) for your Gas Bill:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec5Qs3"
@@ -98,14 +100,15 @@
                 android:inputType="numberDecimal|number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtSec5PG&EBillsAmnt"
+                android:id="@+id/txtSec5GasBillAmnt"
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
                 android:hint="$"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:tag="3" />
             <TextView
-                android:text="4. Garbage"
+                android:text="4. Enter the amount you pay monthly (in $) for your garbage bill:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec5Qs4"
@@ -118,14 +121,15 @@
                 android:inputType="numberDecimal|number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtSec5GarbageBillsAmnt"
+                android:id="@+id/txtSec5GarbageBillAmnt"
                 android:layout_marginRight="275dp"
                 android:textColor="#ff000000"
                 android:maxLines="1"
                 android:hint="$"
-                android:paddingBottom="10dp" />
+                android:paddingBottom="10dp"
+                android:tag="4" />
             <TextView
-                android:text="5. Water"
+                android:text="5. Enter the amount you pay monthly (in $) for your "
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtvSec5Qs4"

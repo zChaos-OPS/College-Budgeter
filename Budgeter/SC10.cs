@@ -15,52 +15,94 @@ namespace Budgeter
     [Activity(Label = "SC10")]
     public class SC10 : Activity
     {
-        private int eatingPreferences = 0;
-        private int eatingBudget = 0;
+        private int eatingLocationPreference = 0;
+        private int mealCostinDollars = 0;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.SC10);
+
+            if (Global.budgetModel.EatingPlacePreference != 0)
+            {
+                eatingLocationPreference = Global.budgetModel.EatingPlacePreference;
+            }
+            if (Global.budgetModel.CostofMealsinDollars != 0)
+            {
+                mealCostinDollars = Global.budgetModel.CostofMealsinDollars;
+            }
 
             //The code for the "Proceed" button
             Button btnScreen11 = FindViewById<Button>(Resource.Id.btnProceedSC10);
+            //Declaring and assigning variables for Sec7Qs1Answers to be used here:
+            RadioButton sec7Ans1Opt1, sec7Ans1Opt2, sec7Ans1Opt3, sec7Ans1Opt4, sec7Ans1Opt5;
 
-            //Declaring and assigning variables to be used here for Sec7 Qs1:
-            RadioButton sec7Qs1Opt1, sec7Qs1Opt2, sec7Qs1Opt3, sec7Qs1Opt4, sec7Qs1Opt5;
-            sec7Qs1Opt1 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt1);
-            sec7Qs1Opt2 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt2);
-            sec7Qs1Opt3 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt3);
-            sec7Qs1Opt4 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt4);
-            sec7Qs1Opt5 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt5);
+            sec7Ans1Opt1 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans1Opt1);
+            sec7Ans1Opt2 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans1Opt2);
+            sec7Ans1Opt3 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans1Opt3);
+            sec7Ans1Opt4 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans1Opt4);
+            sec7Ans1Opt5 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans1Opt5);
 
-            sec7Qs1Opt1.Click += rdgrpSec7Qs1AnsClick;
-            sec7Qs1Opt2.Click += rdgrpSec7Qs1AnsClick;
-            sec7Qs1Opt3.Click += rdgrpSec7Qs1AnsClick;
-            sec7Qs1Opt4.Click += rdgrpSec7Qs1AnsClick;
-            sec7Qs1Opt5.Click += rdgrpSec7Qs1AnsClick;
+            if (eatingLocationPreference != 0)
+            {
+                switch (eatingLocationPreference)
+                {
+                    case 1:
+                        sec7Ans1Opt1.Checked = true;
+                        break;
+                    case 2:
+                        sec7Ans1Opt2.Checked = true;
+                        break;
+                    case 3:
+                        sec7Ans1Opt3.Checked = true;
+                        break;
+                    case 4:
+                        sec7Ans1Opt4.Checked = true;
+                        break;
+                    case 5:
+                        sec7Ans1Opt5.Checked = true;
+                        break;
+                }
+            }
+
+            sec7Ans1Opt1.Click += rdgrpSec7Ans1Click;
+            sec7Ans1Opt2.Click += rdgrpSec7Ans1Click;
+            sec7Ans1Opt3.Click += rdgrpSec7Ans1Click;
+            sec7Ans1Opt4.Click += rdgrpSec7Ans1Click;
+            sec7Ans1Opt5.Click += rdgrpSec7Ans1Click;
             //Declaration and assigning of variables is complete.
-
-            //Declaring and assigning variables to be used here for Sec1 Qs2:
+            //Declaring and assigning variables for Sec7Qs2Answers to be used here:
             RadioButton sec7Ans2Opt1, sec7Ans2Opt2, sec7Ans2Opt3;
-            sec7Ans2Opt1 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt1);
-            sec7Ans2Opt2 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt2);
-            sec7Ans2Opt3 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Qs1Opt3);
-           
 
-            sec7Ans2Opt1.Click += rdgrpSec7Qs2AnsClick;
-            sec7Ans2Opt2.Click += rdgrpSec7Qs2AnsClick;
-            sec7Ans2Opt3.Click += rdgrpSec7Qs2AnsClick;
+            sec7Ans2Opt1 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans2Opt1);
+            sec7Ans2Opt2 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans2Opt2);
+            sec7Ans2Opt3 = (RadioButton)FindViewById(Resource.Id.rdbtnSec7Ans2Opt3);
 
-            //Declaration and assigning of variable is complete.
+            if (mealCostinDollars != 0)
+            {
+                switch (mealCostinDollars)
+                {
+                    case 1:
+                        sec7Ans2Opt1.Checked = true;
+                        break;
+                    case 2:
+                        sec7Ans2Opt2.Checked = true;
+                        break;
+                    case 3:
+                        sec7Ans2Opt3.Checked = true;
+                        break;
+                }
+            }
 
-            //The code for the "Proceed" button
-           
+            sec7Ans2Opt1.Click += rdgrpSec7Ans2Click;
+            sec7Ans2Opt2.Click += rdgrpSec7Ans2Click;
+            sec7Ans2Opt3.Click += rdgrpSec7Ans2Click;
+            //Declaration and assigning of variables is complete.
             btnScreen11.Click += (sender, e) =>
             {
-                //Checks if the screen is validated by the validateScreen function and if good carries out the MovetoSection2 function.
                 if (ValidateScreen())
+                {
                     MoveToSection8();
+                }
             };
 
             //The code for the "Back" button
@@ -72,62 +114,36 @@ namespace Budgeter
                 StartActivity(Screen9);
             };
         }
-        //The function rdgrpSec1Ans1Click finds out which rdbtn for Question 1 was selected by the user.
-        private void rdgrpSec7Qs1AnsClick(object sender, EventArgs e)
+        private void rdgrpSec7Ans1Click(object sender, EventArgs e)
         {
             RadioButton rbSec7Ans1 = (RadioButton)sender;
 
-            eatingPreferences = Convert.ToInt32(rbSec7Ans1.Tag.ToString());
+            eatingLocationPreference = Convert.ToInt32(rbSec7Ans1.Tag.ToString());
 
-            Toast.MakeText(this, eatingPreferences.ToString(), ToastLength.Long).Show();
+            Toast.MakeText(this, eatingLocationPreference.ToString(), ToastLength.Long).Show();
         }
-        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user.
-        private void rdgrpSec7Qs2AnsClick(object sender, EventArgs e)
+        private void rdgrpSec7Ans2Click(object sender, EventArgs e)
         {
             RadioButton rbSec7Ans2 = (RadioButton)sender;
 
-            eatingBudget = Convert.ToInt32(rbSec7Ans2.Tag.ToString());
+            mealCostinDollars = Convert.ToInt32(rbSec7Ans2.Tag.ToString());
 
-            Toast.MakeText(this, eatingBudget.ToString(), ToastLength.Long).Show();
+            Toast.MakeText(this, eatingLocationPreference.ToString(), ToastLength.Long).Show();
         }
-        //The function rdgrpSec1Ans2Click finds out which rdbtn for Question 2 was selected by the user.
-        private Boolean ValidateScreen()
+        private bool ValidateScreen()
         {
-            // ==0 signifies that the user hasn't selected an option and/or has entered in a 0 in a textbox or left the textbox empty.
-
-            /* "&&" is the And operator and "||" is the Or operator. When using an And operator, both or however many conditions you write
-            MUST all be true or the condition is false and vice-versa. When using an Or opearator, only one of the both/several conditions MUST be true and the 
-            condition will be true and vice-versa.
-            */
-
-            //Conditions for Question 1
-
-            //All questions are empty
-            if (eatingPreferences == 0 && eatingBudget == 0)
+            if (eatingLocationPreference == 0 || mealCostinDollars == 0)
             {
-                Toast.MakeText(this, "Please answer all the questions below and then click Proceed.", ToastLength.Long).Show();
-                return false;
-            }
-            //Qs1 is empty
-            if (eatingPreferences == 0)
-            {
-                Toast.MakeText(this, "Please select an option from Question 1.", ToastLength.Long).Show();
-                return false;
-            }
-
-            //Conditions for Question 2
-
-            //Qs 2 is empty
-            if (eatingBudget == 0)
-            {
-                Toast.MakeText(this, "Please select an option from Question 2.", ToastLength.Long).Show();
+                Toast.MakeText(this, "Please answer all the questions and then click on 'Proceed'", ToastLength.Long).Show();
                 return false;
             }
             return true;
         }
-        //Moves on to Section8
         private void MoveToSection8()
         {
+            Global.budgetModel.EatingPlacePreference = eatingLocationPreference;
+            Global.budgetModel.CostofMealsinDollars = mealCostinDollars;
+
             Intent Screen11 = new Intent(this, typeof(SC11));
             StartActivity(Screen11);
         }

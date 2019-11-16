@@ -32,7 +32,8 @@
                 android:layout_marginLeft="115dp"
                 android:textSize="40dp"
                 android:textColor="#ffeeff00"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginRight="115dp" />
             <TextView
                 android:text="Click on 'Proceed' to learn about this app."
                 android:layout_width="wrap_content"

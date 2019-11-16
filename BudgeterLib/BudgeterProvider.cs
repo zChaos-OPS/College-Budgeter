@@ -9,11 +9,11 @@ namespace BudgeterLib
         BudgeterModel budget = new BudgeterModel();
         public void SetScreen1Option(int monthlydress,string range,int avgNoOfClothes)
         {
-            budget.NoofDressPerMonth = monthlydress;
-            budget.ClothingRange = range;
+            //budget.NoofDressPerMonth = monthlydress;
+
         }
 
-        public void SetScreen2Option(bool walk)
+        public void SetScreen2Option(int walk)
         {
             budget.Walk = walk;
         }
